@@ -1,0 +1,189 @@
+/*
+0) perkenalan ttg go
+- go mod
+- go run
+
+1) format penulisan // hampir mirim dengan bahasa C
+2) variable
+- deklarasi 
+- inisialisai
+
+3) tipe data (string, int)
+4) format if ... else --> switch case (nanti)
+4) for loop --> for (spt while/ nanti)
+5) array --> array d python( tidak dipermasalhkan tipe data)
+6) function 
+
+7) struct --> C banget 
+
+*/ 
+
+// 1) format penulisan golang
+/*
+package main // java
+
+import "fmt" // format package
+
+// format standard
+func main(){
+
+}*/
+
+// 2) variable &  
+// 3) tipe data
+/*
+package main
+
+import "fmt"
+
+func main(){
+	// deklarasi (memberi tahu nama var ny apa dan tipedatanya apa --> kepada si compiler)
+	var x int
+	var y int
+	// var NamaSiswa string
+
+	// inisialisasi (pemberian nilai ke var yg sdh di deklarasi )
+	x = 100
+	y = 120
+	// NamaSiswa = "budi"
+
+	// fmt.Println(x, NamaSiswa)
+	fmt.Printf("nilai siswa: %d %d \n", x, y) 
+	
+	
+	
+	// fmt.Printf("nama siswa: %s \n", NamaSiswa)
+	
+
+}
+*/
+
+// 4) format if ... else
+/*
+package main
+
+import "fmt"
+
+
+func main(){
+	var y int
+	y = -2 
+
+	// conditional yg di cek nilai boolean (true/false) berdasrkan kondisi yg dimasukkan
+	if ( y>0 ){
+		fmt.Println("benar")
+	}else{
+		fmt.Println("salah")
+	}
+	
+}
+*/
+
+// 5) array
+// index array selalu dimulai dari nol
+/*
+[0][1][2][3] --> string / panjg data sudah 
+
+["mangga"][][]["pisang"]
+*/
+
+/*
+package main
+
+import "fmt"
+
+func main(){
+	
+	// var arr = [3]int {10,30,50}
+	var arr = [3]int {1,2,3}
+
+	// arr[0] = 15
+	// arr[1] = 200
+
+	fmt.Println(arr) // int , string, float, struct 
+	
+}
+*/
+
+// 6) function dan return value
+
+// package main
+
+// import "fmt"
+
+// // kumpulan dari statement2 --> reuse
+// // return --> nilai balik yg dikirim dari function
+
+// func tambah(a,b int)(int){
+// 	return a+b
+// }
+
+// func main(){
+	
+// 	// panggil
+// 	var hasil_jum int = tambah(12, 15)
+// 	fmt.Println(hasil_jum)
+
+// }
+
+// looping (for)
+// package main
+
+// import "fmt"
+
+// func main(){
+	
+// 	// start_value; condition; increement/decreement
+// 	// i++ -> i = i + 1
+// 	// [0][1][2] --> array
+
+// 	for i := 1; i < 5; i++ {
+// 		fmt.Println("loop")
+// 	}
+// }
+
+
+// test case:
+// example: 5 array dengan nilai acak
+// buat function yg bisa mengecek apakah dalam array tsb mengandung bil ganjil atau genap
+// jika genap maka tampilkan bilangannya dan tambah string "merupakan bil genap" -> 12 merupakan bil genap
+// ganjil -> 15 merupakan bil ganjil
+// modulus %
+
+// 1) fucntion
+// 2) param dan array
+// 3) for loop
+// 4) conditional
+// 5) printf %d
+
+
+
+
+// 7) struct --> json
+/*
+package main
+
+import "fmt"
+
+type jumlah struct{
+	NilaiA int
+	NilaiB int
+}
+
+func tambah(x jumlah){
+	fmt.Println(x.NilaiA)
+	fmt.Println(x.NilaiB)
+
+}
+
+func main(){
+	var j jumlah
+
+	j = jumlah{NilaiA:10, NilaiB:30}
+	
+	tambah(j)
+
+	// fmt.Println(j.NilaiB)
+	// fmt.Printf("hasil jum: %d", j.NilaiB+j.NilaiA)
+}
+*/
